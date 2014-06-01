@@ -6,6 +6,9 @@ update_interval 1
 TEXT
 
 [\
+# MOCP:                                                                       
+{"full_text":"${exec mocp -Q %artist} - ${exec mocp -Q %song}","color":"\#92B37D","separator":false,"separator_block_width":6},\
+
 # Pacman updates:
 {"full_text":"UPDATES","color":"\#888888","separator":false,"separator_block_width":6},\
 {"full_text":"${exec pacman -Qu | wc -l}","color":"\#EEEEEE","separator":false,"separator_block_width":6},\
