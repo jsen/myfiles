@@ -15,4 +15,7 @@ fi
 # exec startkde
 # exec startxfce4
 # ...or the Window Manager of your choice
+urxvtd &
 exec i3
+xrdb -load ~/.Xresources
+feh --randomize --bg-fill ~/Downloads/Wallpapers/*
